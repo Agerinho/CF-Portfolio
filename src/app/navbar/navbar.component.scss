@@ -1,0 +1,40 @@
+.navbar-list {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-toggle {
+  font-size: 2rem;
+  display: none;
+}
+
+.bg-none {
+  background-color: transparent;
+}
+
+.border-none {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  #navBar, .socials, .contact {
+    display: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-link {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+.nav-link:hover {
+  color: #000 !important
+}
+
+.btn {
+  background-color: linear-gradient(125deg, var($gradient1) 0%, $gradient2 100%);
+}

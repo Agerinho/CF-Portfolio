@@ -1,1 +1,43 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/img/MA-Logo.png" alt="Logo" height="50" width="50" class="img-fluid rounded">
+    </a>
+    <div class="" id="navBar">
+      <ul class="navbar-list m-0">
+        <li class="nav-item">
+          <a class="nav-link text-secondary" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" routerLink="/" fragment="about">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" routerLink="/" fragment="skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" routerLink="/" fragment="projects">Projects</a>
+        </li>
+      </ul>
+    </div>
+    <div class="socials">
+      <a class="text-secondary fs-4 me-4" target="_blank" href="https://linkedin.com/in/MarkusAger">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a class="text-secondary fs-4 me-4" target="_blank" href="https://instagram.com/Agerinho">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a class="text-secondary fs-4 me-4" target="_blank" href="https://twitter.com">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a class="text-secondary fs-4" target="_blank" href="https://github.com/Agerinho">
+        <i class="bi bi-github"></i>
+      </a>
+    </div>
+    <div class="contact">
+      <a routerLink="/" fragment="/contact" class="btn btn-success">Contact me</a>
+    </div>
+    <button class="navbar-toggle bg-none border-none">
+      <i class="bi bi-list"></i>
+    </button>
+  </div>
+</nav>
