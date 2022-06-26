@@ -29,13 +29,13 @@ $typewriterCharacters: 12;
 
 .hero {
   color: #111;
-  height: calc(100vh - 76px);;
+  height: calc(100vh - 125px);;
   width: 100%;
+  position: relative;
 }
 
 @media screen and (max-width: 991px) {
   .hero {
-    margin-top: 15vh;
     align-items: initial;
   }
 }
@@ -97,4 +97,9 @@ h2 {
     h2 {
         font-size: 25px;
     }
+}
+
+.scrolldown {
+    position: absolute;
+    bottom: 100px;
 }

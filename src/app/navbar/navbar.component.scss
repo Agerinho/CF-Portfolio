@@ -31,10 +31,12 @@
   }
 }
 
-.nav-link:hover {
-  color: #000 !important
+.nav-link:hover,
+.socials a:hover {
+  color: #000 !important;
 }
 
 .btn {
-  background-color: linear-gradient(125deg, var($gradient1) 0%, $gradient2 100%);
+  background: linear-gradient(135deg, var(--gradient1) 0%, var(--gradient2) 100%);
+  color: #fff;
 }
