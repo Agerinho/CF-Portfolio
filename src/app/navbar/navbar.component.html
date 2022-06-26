@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-lg border-bottom">
+<nav class="navbar border-bottom">
   <div class="container-fluid px-5 py-4">
     <a class="navbar-brand" href="#">
-      <img src="../../assets/img/MA-Logo.png" alt="Logo" height="50" width="50" class="img-fluid rounded">
+      <img src="../../assets/img/Ich.jpg" alt="Logo" class="rounded-circle">
     </a>
-    <div class="" id="navBar">
+    <div id="navbar">
       <ul class="navbar-list p-0 m-0">
         <li class="nav-item">
           <a class="nav-link text-secondary" routerLink="/">Home</a>
@@ -36,8 +36,43 @@
     <div class="contact">
       <a routerLink="/" fragment="contact" class="btn">Contact me</a>
     </div>
-    <button class="navbar-toggle bg-none border-none">
-      <i class="bi bi-list"></i>
+    <button id="navToggle" class="navbar-toggle bg-none border-none">
+      <i id="navToggleIcon" class="bi bi-list"></i>
     </button>
+    <div id="navbarMobile" class="container-fluid bg-white">
+      <ul class="p-3 m-0 rounded-3 shadow">
+        <li class="nav-item">
+          <a class="nav-link text-secondary" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" routerLink="/" fragment="about">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" routerLink="/" fragment="skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" routerLink="/" fragment="projects">Projects</a>
+        </li>
+        <li>
+          <div class="socialsMobile text-center my-4">
+            <a class="text-secondary fs-4 me-4" target="_blank" href="https://linkedin.com/in/MarkusAger">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a class="text-secondary fs-4 me-4" target="_blank" href="https://instagram.com/Agerinho">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a class="text-secondary fs-4 me-4" target="_blank" href="https://twitter.com">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a class="text-secondary fs-4" target="_blank" href="https://github.com/Agerinho">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </li>
+        <li class="text-center">
+          <a routerLink="/" fragment="contact" class="btn fs-5 mb-3">Contact me</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
