@@ -1,5 +1,28 @@
 <section id="projects">
-    <div class="container py-5">
-        projects
+  <div class="container py-5">
+    <h2 class="h2 text-center mb-5">My Projects</h2>
+    <div class="row">
+      <div class="col" *ngFor="let project of projects; index as i">
+        <div class="card">
+          <img src="{{project.image}}" width="250" height="175" alt="{{project.name}}" class="card-img-top">
+          <div class="card-body">
+            <h4 class="h4 card-title">
+              {{ project.name }}
+            </h4>
+            <div class="tech mb-2">
+              <p class="card-text" *ngIf="project.description">{{ project.description }}</p>
+              <span class="me-3 fs-3" title="HTML" *ngIf="project.tech.html"><i class="fa-brands fa-html5"></i></span>
+              <span class="me-3 fs-3" title="SASS" *ngIf="project.tech.scss"><i class="fa-brands fa-sass"></i></span>
+              <span class="me-3 fs-3" title="Javascript" *ngIf="project.tech.js"><i class="fa-brands fa-js"></i></span>
+              <span class="ts me-3 fs-3" title="TypeScript" *ngIf="project.tech.ts"></span>
+              <span class="me-3 fs-3" title="Angular" *ngIf="project.tech.angular"><i
+                  class="fa-brands fa-angular"></i></span>
+              <span class="fs-3" title="Typo3" *ngIf="project.tech.typo3"><i class="fa-brands fa-typo3"></i></span>
+            </div>
+            <a class="btn btn-success" target="_blank" href="{{project.link}}">Visit</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>

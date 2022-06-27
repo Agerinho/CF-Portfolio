@@ -55,11 +55,17 @@ img {
 #navbarMobile {
   z-index: 5;
   position: absolute;
-  display: none;
+  visibility: hidden;
   top: 160px;
+  width: 97%;
   left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity .5s;
   &.active {
-    display: block;
+    visibility: visible;
+    opacity: 1;
   }
   ul {
     list-style: none;

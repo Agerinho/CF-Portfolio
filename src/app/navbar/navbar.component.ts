@@ -10,22 +10,22 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const main = document.getElementById("main")
     const navToggle = document.getElementById("navToggle")
     const navToggleIcon = document.getElementById("navToggleIcon")
     const mobileNav = document.getElementById("navbarMobile")
     const navLinks = document.querySelectorAll("#navbarMobile a")
 
-    if(navToggle) {
-      navToggle.addEventListener("click", () => {
+    navToggle?.addEventListener("click", () => {
+      mobileNav?.classList.toggle("active")
+      navToggleIcon?.classList.toggle("fa-xmark")
+      main?.classList.toggle("navActive")
+    })
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
         mobileNav?.classList.toggle("active")
-        navToggleIcon?.classList.toggle("bi-x")
+        navToggleIcon?.classList.toggle("fa-xmark")
       })
-      navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-          mobileNav?.classList.toggle("active")
-          navToggleIcon?.classList.toggle("bi-x")
-        })
-      })
-    }
+    })
   }
 }
