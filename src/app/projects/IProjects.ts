@@ -6,7 +6,8 @@ export interface IProjects{
   github?: string
   tech: {
     html? : boolean
-    scss? : boolean
+    scss?: boolean
+    bs?: boolean
     js? : boolean
     ts? : boolean
     angular?: boolean

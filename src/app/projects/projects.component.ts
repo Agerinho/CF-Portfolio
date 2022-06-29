@@ -8,9 +8,7 @@ import { projects } from './projects';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  projects: Array<IProjects>= projects;
-
-
+  projects: Array<IProjects> = projects;
   constructor() { }
 
   ngOnInit(): void {

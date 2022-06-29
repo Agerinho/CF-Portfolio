@@ -1,20 +1,31 @@
 <section id="about">
   <div class="container py-5">
-    <h2 class="h2 fs-1 text-white text-center py-5">About me</h2>
-    <div class="row">
-      <div class="col d-flex justify-content-center align-items-center">
-        <!-- <img src="../../assets/img/me.png" alt="Me" class="img-fluid rounded"> -->
+    <h2 class="h2 text-center mb-5">About me</h2>
+    <ul class="nav justify-content-center nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills"
+          type="button" role="tab" aria-controls="pills-skills" aria-selected="true">Skills</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education"
+          type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-workexperience-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-workexperience" type="button" role="tab" aria-controls="pills-workexperience"
+          aria-selected="false">Work Experience</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit debitis beatae totam ratione laudantium
+        quasi recusandae ab, nam nobis ut quaerat culpa veritatis rerum voluptatem!
       </div>
-      <div class="col">
-        <div class="card p-5 shadow-lg">
-          <p>I am Markus and i am originally from Tyrol, but living now in Vienna. I love working on projects that
-            challenge me.</p>
-          <ul>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit.</li>
-          </ul>
-        </div>
+      <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, commodi?
+      </div>
+      <div class="tab-pane fade" id="pills-workexperience" role="tabpanel" aria-labelledby="pills-workexperience-tab">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptas magni minus ipsa quisquam.
       </div>
     </div>
   </div>
