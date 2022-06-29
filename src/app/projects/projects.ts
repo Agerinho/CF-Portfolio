@@ -51,5 +51,18 @@ export const projects = [
       bs: true,
       js: true
     }
+  },
+  {
+    name: "This Website",
+    image: "../../assets/img/portfolio.png",
+    description: "This website was created during the CodeFactory Full Stack Course",
+    github: "https://github.com/Agerinho/CF-Portfolio",
+    tech: {
+      html: true,
+      scss: true,
+      bs: true,
+      ts: true,
+      angular: true
+    }
   }
 ]

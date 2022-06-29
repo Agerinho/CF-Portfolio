@@ -1,6 +1,6 @@
 export interface IProjects{
   name: string
-  link: string
+  link?: string
   image: string
   description?: string
   github?: string
