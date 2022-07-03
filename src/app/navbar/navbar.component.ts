@@ -25,6 +25,7 @@ export class NavbarComponent implements OnInit {
       link.addEventListener("click", () => {
         mobileNav?.classList.toggle("active")
         navToggleIcon?.classList.toggle("fa-xmark")
+        main?.classList.toggle("navActive")
       })
     })
   }
