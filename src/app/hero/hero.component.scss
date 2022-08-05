@@ -30,6 +30,8 @@ $typewriterCharacters: 14;
 @media screen and (max-width: 991px) {
   .hero {
     align-items: initial;
+    justify-content: start !important;
+    padding-top: 20vh;
   }
 }
 
@@ -85,7 +87,7 @@ h2 {
 
 @media screen and (max-width:768px){
     h1 {
-        font-size: 45px;
+        font-size: 40px;
     }
     h2 {
         font-size: 25px;
