@@ -1,0 +1,23 @@
+.card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.ts img {
+  margin-top: -7.5px;
+}
+
+.card {
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.048);
+          transform: scale(1.048);
+}
+/*# sourceMappingURL=projects.component.css.map */

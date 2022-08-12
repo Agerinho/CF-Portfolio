@@ -6,3 +6,11 @@
 .ts img {
   margin-top: -7.5px;
 }
+
+.card {
+  transition: transform 250ms ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.048);
+}

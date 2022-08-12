@@ -1,0 +1,16 @@
+.nav-pills .nav-link.active {
+  color: inherit;
+  background-color: inherit;
+  border-bottom: 1px solid;
+}
+
+.nav-pills .nav-link {
+  color: #6c757d;
+}
+
+.skills {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+/*# sourceMappingURL=about.component.css.map */

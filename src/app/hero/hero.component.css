@@ -1,0 +1,132 @@
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.hero {
+  color: #111;
+  height: calc(100vh - 150px);
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .hero {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+    padding-top: 20vh;
+  }
+}
+
+h1 {
+  font-family: monospace;
+  text-transform: lowercase;
+  font-weight: 800;
+  font-size: 100px;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+h1::after, h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: #fff;
+  -webkit-animation: typewriter 2.5s steps(14) 1s forwards;
+          animation: typewriter 2.5s steps(14) 1s forwards;
+}
+
+h1::after {
+  width: 0.1em;
+  background: black;
+  -webkit-animation: typewriter 2.5s steps(14) 1s forwards, blink 750ms steps(14) infinite;
+          animation: typewriter 2.5s steps(14) 1s forwards, blink 750ms steps(14) infinite;
+}
+
+h2 {
+  font-family: monospace;
+  text-transform: lowercase;
+  font-weight: 800;
+  font-size: 50px;
+  text-align: center;
+  color: #222;
+  opacity: 0;
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+  -webkit-animation: fadeInUp 1.5s ease calc($typewriterSpeed + 2s) forwards;
+          animation: fadeInUp 1.5s ease calc($typewriterSpeed + 2s) forwards;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 75px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+
+.scrolldown {
+  position: absolute;
+  bottom: 100px;
+  opacity: 0;
+  -webkit-animation: fadeInUp 1.5s ease calc($typewriterSpeed + 3s) forwards;
+          animation: fadeInUp 1.5s ease calc($typewriterSpeed + 3s) forwards;
+}
+/*# sourceMappingURL=hero.component.css.map */
